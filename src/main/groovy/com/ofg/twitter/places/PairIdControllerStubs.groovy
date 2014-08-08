@@ -13,7 +13,7 @@ class PairIdControllerStubs {
     @Stub
     public static void getPlacesFromTweets() {
         stubFor(
-                put(urlMatching('/[0-9]+'))
+                put(urlMatching('/api/[0-9]+'))
                         .withHeader(CONTENT_TYPE, equalTo(V1_JSON))
                         .willReturn(aResponse()
                         .withStatus(200)
